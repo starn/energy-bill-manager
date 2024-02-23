@@ -47,8 +47,19 @@
 
 Solution
 
-    - Use a H2 file based database
+Proposal
+
+    - Use a H2 file based database, auto generated at first launch
     - expose the computing engine through a REST api like
         http://localhost:8080/api/consumption/01/2024/02
 
+Compilation
+
+    - run: mvn clean install
+
+Launching:
+
+    - Launch the main class: EnergyBillManagerApplication
+    - open your browser or Postman for using the GET service:
+        http://localhost:8080/api/consumption/01/2024/02
 
