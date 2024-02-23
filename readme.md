@@ -48,5 +48,7 @@
 Solution
 
     - Use a H2 file based database
-    - expose the computing engine through a REST api
+    - expose the computing engine through a REST api like
+        http://localhost:8080/api/consumption/01/2024/02
+
 

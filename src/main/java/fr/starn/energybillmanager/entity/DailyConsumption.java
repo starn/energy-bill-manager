@@ -10,11 +10,10 @@ public class DailyConsumption {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
-
-    private long client_id;
-    private Date consumption_date;
-    private boolean is_gaz;
-    private int consoKWH;
+    private long clientId;
+    private Date consumptionDate;
+    private boolean isGaz;
+    private long consoKWH;
 
     public long getId() {
         return id;
@@ -24,35 +23,36 @@ public class DailyConsumption {
         this.id = id;
     }
 
-    public long getClient_id() {
-        return client_id;
+    public long getClientId() {
+        return clientId;
     }
 
-    public void setClient_id(long client_id) {
-        this.client_id = client_id;
+    public void setClientId(long clientId) {
+        this.clientId = clientId;
     }
 
-    public Date getConsumption_date() {
-        return consumption_date;
+    public Date getConsumptionDate() {
+        return consumptionDate;
     }
 
-    public void setConsumption_date(Date consumption_date) {
-        this.consumption_date = consumption_date;
+    public void setConsumptionDate(Date consumptionDate) {
+        this.consumptionDate = consumptionDate;
     }
 
-    public boolean isIs_gaz() {
-        return is_gaz;
+    public boolean isGaz() {
+        return isGaz;
     }
 
-    public void setIs_gaz(boolean is_gaz) {
-        this.is_gaz = is_gaz;
+    public void setGaz(boolean gaz) {
+        isGaz = gaz;
     }
 
-    public int getConsoKWH() {
+    public long getConsoKWH() {
         return consoKWH;
     }
 
-    public void setConsoKWH(int consoKWH) {
+    public void setConsoKWH(long consoKWH) {
         this.consoKWH = consoKWH;
     }
+
 }
